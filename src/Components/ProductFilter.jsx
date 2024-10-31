@@ -2,7 +2,6 @@ import { SET_CATEGORY, SET_SEARCH,FilterStateContext,FilterDispatchContext } fro
 import { useDispatch, useSelector } from 'react-redux';
 import { setCategory, setSearch } from '../store/actions/productActions';
 
-
 const ProductFilter = () => {
   const {category,search} = useSelector((state) => state.productsStore);
   const dispatch = useDispatch();
